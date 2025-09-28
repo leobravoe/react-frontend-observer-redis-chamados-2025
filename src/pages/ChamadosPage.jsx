@@ -63,14 +63,14 @@ export default function ChamadosPage() {
         onNext={() => setPage((p) => p + 1)}
       />
 
-      {/* Componente "invisível" que lida com as atualizações em tempo real */}
-      <RealtimeChamados />
+      {/* Componente que renderiza a lista de chamados */}
+      <ListaChamados items={items} />
 
       {/* Indicador de que uma nova busca está acontecendo em segundo plano */}
       {isFetching && <small style={{ display: 'block', margin: '12px 0' }}>Atualizando lista...</small>}
 
-      {/* Componente que renderiza a lista de chamados */}
-      <ListaChamados items={items} />
+      {/* Componente "invisível" que lida com as atualizações em tempo real */}
+      <RealtimeChamados />
     </main>
   );
 }
