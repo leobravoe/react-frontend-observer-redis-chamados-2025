@@ -1,5 +1,6 @@
 // src/App.jsx
 
+import RealtimeChamados from './components/RealtimeChamados';
 import ChamadosPage from './pages/ChamadosPage';
 
 function App() {
@@ -7,6 +8,8 @@ function App() {
   return (
     <>
       <ChamadosPage />
+      {/* Componente "invisível" que lida com as atualizações em tempo real */}
+      <RealtimeChamados />
     </>
   );
 }
