@@ -123,7 +123,5 @@ npm run preview
 
 ## Licença e Créditos
 
-*   **Licença**: (indeterminado)
-*   **Autor**: (indeterminado)
-
-**Fonte**: `package.json`
+*   **Licença**: MIT
+*   **Autor**: Leonardo Bravo Estácio
